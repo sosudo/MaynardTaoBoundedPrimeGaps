@@ -1,0 +1,30 @@
+name = "BombieriVinogradov"
+version = "0.1.0"
+defaultTargets = ["BombieriVinogradov", "Challenge", "Solution"]
+lintDriver = "batteries/runLinter"
+
+[[require]]
+name = "PrimeNumberTheoremAnd"
+git = "https://github.com/kimihiro64/PrimeNumberTheoremAnd.git"
+rev = "0f15a38c619298b5cd786d39a84dd4bb8997324c"
+
+[[require]]
+name = "Robin1984"
+git = "https://github.com/kimihiro64/Robin1984.git"
+rev = "bfa72aec0c25c8ee29cefe4449d778ff30412bee"
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "v4.33.1"
+
+[[lean_lib]]
+name = "BombieriVinogradov"
+
+[[lean_lib]]
+name = "Challenge"
+roots = ["Challenge"]
+
+[[lean_lib]]
+name = "Solution"
+roots = ["Solution"]
